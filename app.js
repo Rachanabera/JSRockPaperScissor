@@ -22,13 +22,13 @@ const drawGame = () => {
 const showWinner = (userWin,userChoice,computerChoice)=>{
     if(userWin){
         console.log("You win! ");
-        playMessage.innerText=`You win this round ! \n Your ${userChoice} beats ${computerChoice}`;
+        playMessage.innerText=`Damnn !You win this round ! \n Your ${userChoice} beats ${computerChoice}`;
         playMessage.style.backgroundColor="green";
         userScore++;
         userScoreMessage.textContent = `${userScore}`    }
     else{
         console.log("Computer wins this round !")
-        playMessage.innerText=`You lose this round ! \n Computer's ${computerChoice} beats ${userChoice}`;
+        playMessage.innerText=`Shitt ! You lose this round ! \n Computer's ${computerChoice} beats ${userChoice}`;
         playMessage.style.backgroundColor="red";
         computerScore++;
         computerScoreMessage.textContent = `${computerScore}`
